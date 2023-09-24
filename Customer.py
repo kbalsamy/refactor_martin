@@ -20,7 +20,7 @@ class Customer:
         for rental in self._rentals:
             # decomposed -> breaking code into small chunks. 
             # extract method
-            this_amount = self.amount_for(rental)            
+            this_amount = rental.get_charge()           
 
             # Add bonus for a two-day new release rental
             if rental.get_movie().get_price_code() == Movie.NEW_RELEASE and rental.get_days_rented() > 1:
@@ -36,18 +36,9 @@ class Customer:
 
         # print(result)
         return result
+    
+    
 
     def amount_for(self, rental):
-        this_amount = 0
-        # Determine the rental amount based on the movie's price code and rental duration
-        if rental.get_movie().get_price_code() == Movie.REGULAR:
-            this_amount += 2
-            if rental.get_days_rented() > 2:
-                this_amount += (rental.get_days_rented() - 2) * 1.5
-        elif rental.get_movie().get_price_code() == Movie.NEW_RELEASE:
-            this_amount += rental.get_days_rented() * 3
-        elif rental.get_movie().get_price_code() == Movie.CHILDRENS:
-            this_amount += 1.5
-            if rental.get_days_rented() > 3:
-                this_amount += (rental.get_days_rented() - 3) * 1.5
-        return this_amount
+        # this can be removed since we added get_charge() method to the classes where it access the object
+        return rental.get_charge()
