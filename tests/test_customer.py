@@ -32,7 +32,7 @@ class TestCustomer(unittest.TestCase):
         expected_result += "\tNew Release Movie\t6\n"
         expected_result += "\tChildren's Movie\t3.0\n"
         expected_result += "Amount owed is 12.5\n"
-        expected_result += "You earned 1 frequent renter points"
+        expected_result += "You earned 4 frequent renter points"
 
         # Check if the statement method produces the correct result
         self.assertEqual(self.customer.statement(), expected_result)
