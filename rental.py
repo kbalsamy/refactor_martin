@@ -8,3 +8,5 @@ class Rental:
 
     def get_movie(self):
         return self._movie
+    
+    
