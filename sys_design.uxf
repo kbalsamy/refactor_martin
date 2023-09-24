@@ -3,7 +3,8 @@
 --
 pricecode:int
 --
-
+get_charge()
+get_frequent_renter_points()
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>279</x><y>79</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Rental&gt;&gt;
 
 --
@@ -14,12 +15,13 @@ get_frequent_renter_points()
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>468</x><y>241</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Customer&gt;&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>468</x><y>241</y><w>189</w><h>126</h></coordinates><panel_attributes>&lt;&lt;Customer&gt;&gt;
 
 --
 
 --
 statement()
+html_statement()
 get_total_charge()
 get_total_frequent_renter_points()
 
