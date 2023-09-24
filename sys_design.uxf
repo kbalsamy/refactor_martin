@@ -1,0 +1,22 @@
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>27</x><y>250</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Movie&gt;&gt;
+
+--
+pricecode:int
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>279</x><y>79</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Rental&gt;&gt;
+
+--
+daysRented:int
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>468</x><y>241</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Customer&gt;&gt;
+
+--
+
+--
+statement()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>115</y><w>171</w><h>135</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..*</panel_attributes><additional_attributes>10;130;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>124</y><w>126</w><h>135</h></coordinates><panel_attributes>lt=&lt;-
+m1=1..*</panel_attributes><additional_attributes>10;10;120;130</additional_attributes></element></diagram>
