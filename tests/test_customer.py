@@ -34,8 +34,18 @@ class TestCustomer(unittest.TestCase):
         expected_result += "Amount owed is 12.5\n"
         expected_result += "You earned 4 frequent renter points"
 
+        # expected_html_result = "<p><h1>Rental Record for <em>Test Customer</em></h1></p>\n"        
+        # expected_html_result = "\tRegular Movie\t3.5<br>\n"
+        # expected_html_result = "\tNew Release Movie\t6<br>\n"
+        # expected_html_result = "\tChildren's Movie\t3.0<br>\n"
+        # expected_html_result = "<p>Amount owed is<em> 12.5</em>  <p>\n"
+        # expected_html_result = "On this rental You earned <em> 4 frequent renter points</p>"
+
+        
         # Check if the statement method produces the correct result
         self.assertEqual(self.customer.statement(), expected_result)
+        # self.assertEqual(self.customer.html_statement(), expected_html_result)
+        
 
 if __name__ == '__main__':
     unittest.main()
