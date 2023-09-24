@@ -1,3 +1,5 @@
+from movie import Movie
+
 class Customer:
     def __init__(self, name):
         self._name = name
@@ -42,4 +44,5 @@ class Customer:
         result += "Amount owed is " + str(total_amount) + "\n"
         result += "You earned " + str(frequent_renter_points) + " frequent renter points"
 
+        print(result)
         return result
