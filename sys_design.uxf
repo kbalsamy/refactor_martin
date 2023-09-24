@@ -10,6 +10,7 @@ pricecode:int
 daysRented:int
 --
 get_charge()
+get_frequent_renter_points()
 
 
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>468</x><y>241</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Customer&gt;&gt;

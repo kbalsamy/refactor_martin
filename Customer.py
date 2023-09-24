@@ -22,13 +22,12 @@ class Customer:
             # extract method
             this_amount = rental.get_charge()           
 
-            # Add bonus for a two-day new release rental
-            if rental.get_movie().get_price_code() == Movie.NEW_RELEASE and rental.get_days_rented() > 1:
-                frequent_renter_points += 1
+            # Add bonus for a two-day new release rental            
+            frequent_renter_points = rental.get_frequent_renter_points()
 
             # Display figures for this rental
-            result += "\t" + rental.get_movie().get_title() + "\t" + str(this_amount) + "\n"
-            total_amount += this_amount
+            result += "\t" + rental.get_movie().get_title() + "\t" + str(rental.get_charge()) + "\n"
+            total_amount += rental.get_charge()
 
         # Add footer lines
         result += "Amount owed is " + str(total_amount) + "\n"
