@@ -1,11 +1,11 @@
-<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>27</x><y>250</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Movie&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>27</x><y>189</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Movie&gt;&gt;
 
 --
 pricecode:int
 --
 get_charge()
 get_frequent_renter_points()
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>279</x><y>79</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Rental&gt;&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>279</x><y>18</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;Rental&gt;&gt;
 
 --
 daysRented:int
@@ -15,7 +15,7 @@ get_frequent_renter_points()
 
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>468</x><y>241</y><w>189</w><h>126</h></coordinates><panel_attributes>&lt;&lt;Customer&gt;&gt;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>468</x><y>180</y><w>189</w><h>126</h></coordinates><panel_attributes>&lt;&lt;Customer&gt;&gt;
 
 --
 
@@ -25,6 +25,34 @@ html_statement()
 get_total_charge()
 get_total_frequent_renter_points()
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>115</y><w>171</w><h>135</h></coordinates><panel_attributes>lt=&lt;-
-m1=1..*</panel_attributes><additional_attributes>10;130;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>124</y><w>126</w><h>135</h></coordinates><panel_attributes>lt=&lt;-
-m1=1..*</panel_attributes><additional_attributes>10;10;120;130</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>54</y><w>171</w><h>135</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>10;130;10;10;170;10</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>63</y><w>126</w><h>135</h></coordinates><panel_attributes>lt=&lt;-
+m1=*</panel_attributes><additional_attributes>10;10;120;10;120;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>234</x><y>342</y><w>189</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Price&gt;&gt;
+--
+--
+get_price_code()
+get_charge()
+get_frequent_renter_points()
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>36</x><y>495</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;childrenPrice&gt;&gt;
+
+--
+
+--
+get_charge()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>225</x><y>495</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;RegularPrice&gt;&gt;
+
+--
+
+--
+get_charge()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>414</x><y>495</y><w>189</w><h>99</h></coordinates><panel_attributes>&lt;&lt;NewReleases&gt;&gt;
+--
+
+--
+get_charge()
+get_frequent_renter_points()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>306</x><y>432</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>72</x><y>288</y><w>171</w><h>126</h></coordinates><panel_attributes>lt=&lt;-
+m1=1</panel_attributes><additional_attributes>170;110;10;110;10;10</additional_attributes></element></diagram>
